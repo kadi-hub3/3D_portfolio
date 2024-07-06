@@ -9,8 +9,8 @@ function App() {
 //footer
   return (
     <BrowserRouter>
-      <div className='relative bg-primary'>
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+      <div className='relative bg-primary z-0'>
+        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center z-0'>
           <Navbar />
           <Hero />
         </div>
