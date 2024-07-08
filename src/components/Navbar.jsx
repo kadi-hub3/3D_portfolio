@@ -13,7 +13,7 @@ const  Navbar = () => {
     <nav className={`${styles.padding} w-full flex items-center py-5 fixed top-0  bg-primary z-10`}>
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link to='/' className='flex items-center gap-2' onClick={()=>{setActive(''); window.scrollTo(0,0);}}>
-          <img scr={logo} alt={logo} className='w-4 h-4 object-contain' />
+          <img scr={logo} alt='logo' className='w-4 h-4 object-contain' />
           <p className='text-white text-[20px] font-bold cursor-pointer'>Kadi <span className='sm:block hidden'> | Code with me</span></p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
