@@ -14,7 +14,6 @@ import {
     mongodb,
     git,
     figma,
-    docker,
     meta,
     starbucks,
     tesla,
@@ -50,7 +49,7 @@ import {
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Web Designer",
       icon: backend,
     },
     {
@@ -81,6 +80,10 @@ import {
       icon: reactjs,
     },
     {
+      name: "Next JS",
+      icon: reactjs,
+    },
+    {
       name: "Redux Toolkit",
       icon: redux,
     },
@@ -108,10 +111,7 @@ import {
       name: "figma",
       icon: figma,
     },
-    {
-      name: "docker",
-      icon: docker,
-    },
+  
   ];
   
   const experiences = [
