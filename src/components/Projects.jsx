@@ -1,4 +1,18 @@
 import React from 'react'
+import { Tilt } from 'react-tilt'
+
+const ProjectCard = () => {
+  return (
+    <motion.div>
+      <Tilt>
+        <div>
+          
+        </div>
+      </Tilt>
+
+    </motion.div>
+  )
+}
 
 const Projects = () => {
   return (
