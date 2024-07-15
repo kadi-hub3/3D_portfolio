@@ -15,7 +15,13 @@ const ProjectCard = ({index,
 }) => {
   return (
     <motion.div>
-      <Tilt>
+      <Tilt
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}
+        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'>
         <div className='relative w-full h-[230px]'>
             <img
               src={image}
