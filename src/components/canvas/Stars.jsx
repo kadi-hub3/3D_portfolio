@@ -1,9 +1,17 @@
 import React from 'react'
 
-const Stars = () => {
+const StarsCanvas = () => {
   return (
-    <div>Stars</div>
-  )
-}
+    <div className='w-full h-auto absolute inset-0 z-[-1]'>
+      <Canvas camera={{ position: [0, 0, 1] }}>
+        <Suspense fallback={null}>
+          <Stars />
+        </Suspense>
 
-export default Stars
+        <Preload all />
+      </Canvas>
+    </div>
+  );
+};
+
+export default StarsCanvas;
