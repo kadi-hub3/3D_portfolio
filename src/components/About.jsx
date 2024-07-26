@@ -1,15 +1,15 @@
-import React from "react";
-import {Tilt} from "react-tilt";
-import { motion } from "framer-motion";
-import { styles } from "../styles";
-import { fadeIn, textVariant } from "../utils/motion";
-import { services } from "../data";
-import { SectionWrapper } from "../hoc";
+import React from 'react';
+import {Tilt} from 'react-tilt';
+import { motion } from 'framer-motion';
+import { styles } from '../styles';
+import { fadeIn, textVariant } from '../utils/motion';
+import { services } from '../data';
+import { SectionWrapper } from '../hoc';
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
     >
       <div
@@ -43,7 +43,7 @@ const About = () => {
       </motion.div>
 
       <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
+        variants={fadeIn('', '', 0.1, 1)}
         className='mt-4 text-secondary text-center text-[17px] max-w-3xl leading-[30px]'
       >
         I'm a skilled software developer with experience in TypeScript and
@@ -62,4 +62,4 @@ const About = () => {
   );
 };
 
-export default SectionWrapper(About, "about");
+export default SectionWrapper(About, 'about');

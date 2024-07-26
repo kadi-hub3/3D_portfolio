@@ -5,6 +5,8 @@ import { github } from '../assets'
 import { projects } from '../data'
 import { fadeIn, textVariant } from '../utils/motion'
 import { styles } from '../styles'
+import { SectionWrapper } from '../hoc'
+
 
 const ProjectCard = ({index,
   name,
@@ -94,4 +96,4 @@ const Projects = () => {
    )
 }
 
-export default Projects
+export default SectionWrapper(Projects, "");
