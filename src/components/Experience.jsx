@@ -5,6 +5,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles";
 import { experiences } from "../data";
 import { textVariant } from "../utils/motion";
+import { SectionWrapper } from "../hoc";
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -75,4 +76,4 @@ const Experience = () => {
     </>  )
 }
 
-export default Experience
+export default SectionWrapper(Experience, "work")
