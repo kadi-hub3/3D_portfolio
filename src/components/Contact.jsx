@@ -17,9 +17,14 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
+  const handleChange = (e) => {
 
+  };
 
-
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+  };
 
   return (
     <div
@@ -33,7 +38,7 @@ const Contact = () => {
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
     <form>
-
+      
     </form>
       </motion.div>
 
